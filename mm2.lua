@@ -4,6 +4,7 @@
 --Feel free to modify!
 --Also, this exploit uses quite a lot of animations for the UI (I am a game designer/scripter, so of course I know how to make those!)
 --This exploit is slightly unfinished, so updates are gonna come.
+--Test
 script.Parent = game.Players.LocalPlayer.PlayerScripts
 local TweenService = game.TweenService
 local gameStarted = Instance.new("BoolValue")
