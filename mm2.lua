@@ -1,4 +1,5 @@
 --Roblox MM2 Exploit, made by [ANONYMOUS]
+--This is my first ever exploit!
 --This exploit was made based on an older version of MM2, and so they might've introduced an Anticheat and then this script would be dead.
 --Feel free to modify!
 --Also, this exploit uses quite a lot of animations for the UI (I am a game designer/scripter, so of course I know how to make those!)
