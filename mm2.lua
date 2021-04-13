@@ -1,7 +1,7 @@
 --Roblox MM2 Exploit, made by [ANONYMOUS]
 --This exploit was made based on an older version of MM2, and so they might've introduced an Anticheat and then this script would be dead.
 --Feel free to modify!
-
+--Also, this exploit uses quite a lot of animations for the UI (I am a game designer/scripter, so of course I know how to make those!)
 script.Parent = game.Players.LocalPlayer.PlayerScripts
 local TweenService = game.TweenService
 local gameStarted = Instance.new("BoolValue")
@@ -16,7 +16,7 @@ end)
 warn("MM2GUI Initialized. Loading...")
 local GUI = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui) --Replace game.Players.LocalPlayer.PlayerGui with game.CoreGui if your executor supports it!
 --{0, 300},{0, 5}
-GUI.Name = "TotallyNotExploitGuiXD"
+GUI.Name = "GUI"
 GUI.Enabled = false
 game.Players.LocalPlayer.PlayerGui.ChildRemoved:Connect(function(child)
 	if child == GUI then
@@ -160,13 +160,14 @@ TestTPButton.MouseLeave:Connect(function()
 	TestTPButtonImage.ImageColor3 = Color3.new(0.192157, 0.192157, 0.192157)
 end)
 TestTPButton.MouseButton1Click:Connect(function()
+	--Gonna add all maps here. Stay tuned!
 	if game.Workspace:FindFirstChild("Bank") ~= nil then
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2706.18872, 21.2988377, 2041.45801, 0.00864851475, -0, -0.999962747, 0, 1, -0, 0.999962747, 0, 0.00864851475)
 		game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(-2706.18872, 21.2988377, 2041.45801))
 	else
 		if game.Workspace:FindFirstChild("BioLab") ~= nil then
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2600.49292, 48.3959503, -1146.03711, 0.998344004, 7.31515755e-08, 0.057521347, -6.90099426e-08, 1, -7.39881543e-08, -0.057521347, 6.98960889e-08, 0.998344004)
-			game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(2600.49292, 48.3959503, -1146.03711))
+			game.Players.LocalPlayer.Character.Humanoid:MoveTo(Vector3.new(2600.49292, 48.3959503, -1146.03711)) --I use MoveTo to fool the server into teleporting us to our desired location. It's effectively a FE bypass.
 		end
 	end
 end)
