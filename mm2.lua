@@ -1,4 +1,4 @@
---Roblox MM2 Exploit, made by [ANONYMOUS]
+--Roblox MM2 Exploit, made by robloxexpl.
 --This is my first ever exploit!
 --This exploit was made based on an older version of MM2, and so they might've introduced an Anticheat and then this script would be dead.
 --Feel free to modify!
