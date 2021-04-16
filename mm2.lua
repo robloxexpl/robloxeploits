@@ -5,7 +5,9 @@
 --Also, this exploit uses quite a lot of animations for the UI (I am a game designer/scripter, so of course I know how to make those!)
 --This exploit is slightly unfinished, so updates are gonna come.
 
-script.Parent = game.Players.LocalPlayer.PlayerScripts
+--DO NOT execute this script on a single command line, the whole script will be commented then. To fix that, remove ALL comments.
+
+--script.Parent = game.Players.LocalPlayer.PlayerScripts 
 local TweenService = game.TweenService
 local gameStarted = Instance.new("BoolValue")
 safeshutdown = false
