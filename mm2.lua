@@ -21,7 +21,7 @@ local GUI = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui) --Repl
 --{0, 300},{0, 5}
 GUI.Name = "GUI"
 GUI.Enabled = false
-game.Players.LocalPlayer.PlayerGui.ChildRemoved:Connect(function(child)
+game.Players.LocalPlayer.PlayerGui.ChildRemoved:Connect(function(child) --WARNING: If you have replaced game.Players.LocalPlayer.PlayerGui with game.CoreGui on line 20, you must replace game.Players.LocalPlayer.PlayerGui.ChildRemoved with game.CoreGui.ChildRemoved too!
 	if child == GUI then
 		if not safeshutdown then
 			warn("WARNING: GUI REMOVED!")
